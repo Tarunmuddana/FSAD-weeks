@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Table</title>
+    <style>
+
+        /* ₹ Rupee symbol added using CSS before every P_COST cell */
+        td.cost::before {
+            content: "₹ ";
+            font-weight: bold;
+            color: #0468d7;
+        }
+
+        img {
+            width: 130px;
+            height: auto;
+            border: 3px double #4cb8ff;
+            padding: 8px;
+        }
+
+        th {
+            font-size: 20px;
+        }
+
+        td {
+            font-size: 18px;
+            text-align:center;
+        }
+
+        /* Update Button */
+        .update {
+            background:#d9f2d9;
+            border:2px solid #4CAF50;
+            padding:8px 18px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+        .update:hover {
+            background:#4CAF50;
+            color:white;
+        }
+
+        /* Delete Button */
+        .delete {
+            background:#ffd6d6;
+            border:2px solid #ff4d4d;
+            padding:8px 18px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+        .delete:hover {
+            background:#ff4d4d;
+            color:white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<table border="2" cellpadding="15" cellspacing="10" align="center">
+    <tr>
+        <th>P_ID</th>
+        <th>P_NAME</th>
+        <th>P_COST</th>
+        <th>P_IMAGE</th>
+        <th>UPDATE</th>
+        <th>DELETE</th>
+    </tr>
+
+    <tr>
+        <td>111</td>
+        <td>P_ONE</td>
+        <td class="cost">10000</td>
+        <td><img src="https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo.png"></td>
+        <td><button class="update">UPDATE</button></td>
+        <td><button class="delete">DELETE</button></td>
+    </tr>
+
+    <tr>
+        <td>222</td>
+        <td>P_TWO</td>
+        <td class="cost">20000</td>
+        <td><img src="https://static.vecteezy.com/system/resources/thumbnails/021/055/755/small_2x/amazon-logo-free-vector.jpg"></td>
+        <td><button class="update">UPDATE</button></td>
+        <td><button class="delete">DELETE</button></td>
+    </tr>
+
+    <tr>
+        <td>333</td>
+        <td>P_THREE</td>
+        <td class="cost">30000</td>
+        <td><img src="https://play-lh.googleusercontent.com/wpnNPYIrdHC3Q_bcFXGpwoMvFvvvQnZJHmFKzumq5ZTRZKIzfxURAUGOMqhPhVxnggY=w600-h300-pc0xffffff-pd"></td>
+        <td><button class="update">UPDATE</button></td>
+        <td><button class="delete">DELETE</button></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
