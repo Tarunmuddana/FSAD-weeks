@@ -1,0 +1,30 @@
+# === IDE & Build ===
+.metadata/
+.settings/
+.classpath
+.project
+target/
+bin/
+*.class
+
+# === Maven ===
+.mvn/
+mvnw
+mvnw.cmd
+
+# === Node / React ===
+node_modules/
+dist/
+.env
+.env.local
+
+# === OS ===
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# === Misc ===
+*.log
+*.tmp
+*.bak
+*.pdf
